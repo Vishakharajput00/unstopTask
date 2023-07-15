@@ -11,7 +11,7 @@ import MyAssess from "./MyAssess";
 
 export default function Home() {
   return (
-    <div >
+    <div class="mainBox" >
       <div class="row">
      <div class='column'>
       <SideNav/>
