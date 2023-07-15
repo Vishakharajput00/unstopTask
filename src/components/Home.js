@@ -11,13 +11,13 @@ import MyAssess from "./MyAssess";
 
 export default function Home() {
   return (
-    <div >
+    <div class="mainBox" >
       <div class="row">
      <div class='column'>
       <SideNav/>
      </div>
 
-        <div class ="row2">
+        <div style={{backgroundColor:"white",padding:"20px",width:"100%"}}>
           <UpperHeader/>
           <AssessOverview/>
           <MyAssess/>

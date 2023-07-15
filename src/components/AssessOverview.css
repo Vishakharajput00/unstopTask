@@ -1,0 +1,124 @@
+.heading {
+  font: Inter;
+  font-weight: 500;
+  size: 18px;
+  line-height: 25.2px;
+  color: #1c4980;
+}
+.main {
+  width: 1224px;
+  height: 114px;
+  border-radius: 12px;
+  border: 1px solid #dadce0;
+  display: flex;
+}
+.firstBox {
+  width: 162px;
+ border-right: 1px solid #dadce0;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+ h2 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #1c4980;
+}
+.flex{
+    display: flex;
+    height:40px;
+    width:77px
+}
+.firstBoxIcon {
+    height:40px;
+    width:40px;
+  border-radius: 8px;
+  background-color: #ebe8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+    width: 20px;
+height: 20px;
+color:#6548EE
+}
+.spanHead{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+align-items: center;
+display: flex;
+color:#1C4980;
+padding-left: 10px;
+}
+
+.secondBox {
+    width: 369px;
+   border-right: 1px solid #dadce0;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+  }
+
+  .spanHead1{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+/* align-items: center;
+display: flex; */
+color:#1C4980;
+padding-left: 10px;
+}
+.spanHead1 span{
+    font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: left;
+color:#05C165
+}
+.candidteflex{
+    display: flex;
+}
+.totalCan{
+    font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: left;
+color:#1C4980
+}
+.line{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height:40px;
+    border-left: 1px solid #DADCE0;
+}
+
+.thirdBox {
+    width: 499px;
+   border-right: 1px solid #dadce0;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+  }
+
+  .fourthBox {
+    width: 188px;
+   border-right: 1px solid #dadce0;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+  }
