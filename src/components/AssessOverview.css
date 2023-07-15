@@ -128,7 +128,7 @@ color:#1C4980
     padding-left: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 925px) {
     .main {
       
         grid-template-columns: 30% 70%;

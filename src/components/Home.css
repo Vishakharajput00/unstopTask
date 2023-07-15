@@ -5,29 +5,10 @@
 }
 .row2{
   background: white;
-  /* width: 100%; */
 }
-/* .box {
-  height: 70px;
-  width: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-.box1 {
-  height: 70px;
-  width: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  border: 1px solid #0073e6;
-  color: #0073e6;
-  background-color: #e5f1fc;
-  border-radius: 8px;
-}
+@media (max-width: 500px) {
+  .column {
+    display: none;
+    }
 
-*/
+}

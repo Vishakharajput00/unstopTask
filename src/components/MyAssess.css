@@ -1,17 +1,170 @@
-.cardsMainBox{
-    display: flex;
-    text-align: center;
+.cardsMainBox {
+  display: grid;
+  /* text-align: center; */
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+}
+@media (max-width: 768px) {
+    .cardsMainBox {
+      
+        grid-template-columns: 50% 50%;
+       
+      }
+   
+  }
+  @media (max-width: 600px) {
+    .cardsMainBox {
+      
+        grid-template-columns: 100%;
+       
+      }
+   
+  }
+
+.newAssissmentBox {
+  border: 1px dashed #dadce0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f8fa;
+  padding: 30px;
+  border-radius: 12px;
+}
+.newAssissmentBox span {
+  color: #1c4980;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+
+  text-align: center;
+}
+.newAssissmentBox p {
+  color: #1c4980;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+
+  text-align: center;
+}
+.Plusicon {
+  width: Fixed (70px);
+  height: Fixed (70px);
+  padding: 10px;
+  border-radius: 72px;
+
+  background-color: white;
 }
 .cards2Box{
+    /* width:388px; */
+height: Hug (209px);
+padding: 16px;
+border-radius: 12px;
+border: 1px solid #DADCE0;
+
+}
+.secondCard{
     display: flex;
+    justify-content: space-between;
+}
+.secondBoxIcon {
+    height:40px;
+    width:40px;
+  border-radius: 8px;
+  background-color: #ebe8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.newAssissmentBox{
-    border:1px dashed #DADCE0;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px ;
+.secondicon{
+    width: 20px;
+height: 20px;
+color:#6548EE
+}
+
+.math{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color:#1C4980
+}
+.calicon{
+    color:#1C4980;
+    width: 11.6px;
+height: 12.83px;
+top: 0.58px;
+left: 1.16px
+
+}
+.duration{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dotted #DADCE0;
+    display: flex;
+    justify-content: space-between;
+}
+.shareBtn{
+    width: 77px;
+    height: 30px;
+    padding-top: 2px;
+    padding-right:  8px;
+    padding-bottom:  2px;
+    padding-left: 6px;
+    border-radius: 50px;
+    border: 1px solid #1C4980;
+    gap: 4px;
+    color:#1C4980
     
-   
-    
+}
+.lp{
+    position: relative;
+    height: 24px;
+    padding-top: 2px;
+    padding-right:  8px;
+    padding-bottom:  2px;
+    padding-left: 6px;
+    border-radius: 50px;
+border: 1px;
+background-color: #6548EE;
+color:white;
+margin-left: 10px;
+margin-right: 20px;
+
+}
+.lp1{
+    position: absolute;
+    height: 24px;
+    padding-top: 2px;
+    padding-right:  8px;
+    padding-bottom:  2px;
+    padding-left: 6px;
+    border-radius: 50px;
+border: 1px;
+background-color: #3079E1;
+color:white;
+margin-left: 98px;
+
+}
+.lp2{
+    position: absolute;
+    height: 24px;
+    padding-top: 2px;
+    padding-right:  8px;
+    padding-bottom:  2px;
+    padding-left: 6px;
+    border-radius: 50px;
+border: 1px;
+background-color: #E9407A;
+color:white;
+margin-left: 110px;
+
+}
+
+.question{
+    color:#1C4980;
+    font-size: 12px;
+    font-weight: 500;
 }
