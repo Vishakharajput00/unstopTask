@@ -18,7 +18,7 @@ export default function Home() {
      </div>
 
         <div style={{backgroundColor:"white",padding:"20px",width:"100%"}}>
-          {/* <UpperHeader/> */}
+          <UpperHeader/>
           <AssessOverview/>
           <MyAssess/>
         </div>
