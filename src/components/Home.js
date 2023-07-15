@@ -11,20 +11,13 @@ import MyAssess from "./MyAssess";
 
 export default function Home() {
   return (
-    <div>
+    <div >
       <div class="row">
      <div class='column'>
       <SideNav/>
      </div>
 
-        <div>
-          {/* <div class="assess">
-            <div class='upperAssess'>
-<span class="firstHead">Assessment</span>
-<span>My Assessments</span>
-            </div>
-            <div>hello</div>
-          </div> */}
+        <div style={{backgroundColor:"white"}}>
           <UpperHeader/>
           <AssessOverview/>
           <MyAssess/>
