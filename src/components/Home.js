@@ -17,7 +17,7 @@ export default function Home() {
       <SideNav/>
      </div>
 
-        <div style={{backgroundColor:"white"}}>
+        <div style={{backgroundColor:"white",padding:"20px"}}>
           <UpperHeader/>
           <AssessOverview/>
           <MyAssess/>
