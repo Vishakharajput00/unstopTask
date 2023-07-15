@@ -3,6 +3,10 @@
   display:flex;
   background-color: #F6F8FA;
 }
+.row2{
+  background: white;
+  width: 100%;
+}
 /* .box {
   height: 70px;
   width: 90px;
