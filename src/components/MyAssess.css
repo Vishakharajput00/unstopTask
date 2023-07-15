@@ -1,0 +1,17 @@
+.cardsMainBox{
+    display: flex;
+    text-align: center;
+}
+.cards2Box{
+    display: flex;
+}
+
+.newAssissmentBox{
+    border:1px dashed #DADCE0;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px ;
+    
+   
+    
+}
