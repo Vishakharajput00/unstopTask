@@ -6,19 +6,24 @@
   color: #1c4980;
 }
 .main {
-  width: 1224px;
-  height: 114px;
+  /* width: 1224px; */
+  /* height: 114px; */
   border-radius: 12px;
   border: 1px solid #dadce0;
   display: flex;
+  display: grid;
+  grid-template-columns: 15% 30% 40% 15%;
+ 
 }
+
 .firstBox {
-  width: 162px;
+  /* width: 162px; */
  border-right: 1px solid #dadce0;
   padding-top: 16px;
   padding-right: 20px;
   padding-bottom: 16px;
   padding-left: 20px;
+
 }
  h2 {
   font-family: Inter;
@@ -60,7 +65,7 @@ padding-left: 10px;
 }
 
 .secondBox {
-    width: 369px;
+    /* width: 369px; */
    border-right: 1px solid #dadce0;
     padding-top: 16px;
     padding-right: 20px;
@@ -106,7 +111,7 @@ color:#1C4980
 }
 
 .thirdBox {
-    width: 499px;
+    /* width: 499px; */
    border-right: 1px solid #dadce0;
     padding-top: 16px;
     padding-right: 20px;
@@ -115,10 +120,25 @@ color:#1C4980
   }
 
   .fourthBox {
-    width: 188px;
+    /* width: 188px; */
    border-right: 1px solid #dadce0;
     padding-top: 16px;
     padding-right: 20px;
     padding-bottom: 16px;
     padding-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      
+        grid-template-columns: 30% 70%;
+       
+      }
+    .firstBox:nth-child(3) {
+        order: 4; /* Change position of 3rd firstBox to 4th position */
+      }
+    
+      .firstBox:nth-child(4) {
+        order: 3; /* Change position of 4th firstBox to 3rd position */
+      }
   }

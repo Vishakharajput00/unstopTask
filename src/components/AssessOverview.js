@@ -22,7 +22,7 @@ export default function AssessOverview() {
                 <div class="spanHead">34</div>
             </div>
            </div>
-           <div class='secondBox'>
+           <div class='firstBox'>
             <h2>Candidates</h2>
             <div class="candidteflex">
                 <div class="firstBoxIcon">
@@ -42,8 +42,8 @@ export default function AssessOverview() {
             </div>
             
            </div>
-           <div class='thirdBox'>
-            <h2>Candidates</h2>
+           <div class='firstBox'>
+            <h2>Candidates Source</h2>
             <div class="candidteflex">
                 <div class="firstBoxIcon">
                    
@@ -70,7 +70,7 @@ export default function AssessOverview() {
             </div>
             
            </div>
-           <div class='fourthBox'>
+           <div class='firstBox'>
             <h2>Total Purpose</h2>
             <div class="flex">
                 <div class="firstBoxIcon">
