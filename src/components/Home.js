@@ -1,8 +1,4 @@
-import React from "react";
-import { BiSolidDashboard } from "react-icons/bi";
-import { MdAssessment } from "react-icons/md";
-import { MdOutlineLibraryBooks } from "react-icons/md";
-import { GrStatusUnknown } from "react-icons/gr";
+import React,{useEffect, useState} from "react";
 import "./Home.css";
 import SideNav from "./SideNav";
 import UpperHeader from "./UpperHeader";
@@ -10,6 +6,8 @@ import AssessOverview from "./AssessOverview";
 import MyAssess from "./MyAssess";
 
 export default function Home() {
+ 
+ 
   return (
     <div class="mainBox" >
       <div class="row">
@@ -19,7 +17,7 @@ export default function Home() {
 
         <div style={{backgroundColor:"white",padding:"20px",width:"100%"}}>
           <UpperHeader/>
-          <AssessOverview/>
+         {/* <div > <AssessOverview/></div> */}
           <MyAssess/>
         </div>
       </div>

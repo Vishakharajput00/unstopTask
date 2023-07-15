@@ -1,3 +1,38 @@
+
+
+@media (max-width: 500px) {
+  .assessemntOverview-hide-show{
+    display: none;
+  }
+
+}
+.myassessment{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.iconsFlex{
+  width: 100%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  float: right;
+  align-items: center;
+}
+.iconFlex-icon{
+  display: flex;
+  justify-content: flex-end;
+}
+.hide-show{
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .hide-show {
+    display: block;
+    }
+ 
+}
+
 .cardsMainBox {
   display: grid;
   /* text-align: center; */

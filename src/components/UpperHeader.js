@@ -14,22 +14,32 @@ export default function UpperHeader() {
         <div class="firstHead">Assessment</div>
         <div class="secondHeading">My Assessments</div>
       </div>
-      <div>
-        <div class="phoneIcon"><GiSmartphone /></div>
+      <div class="laptopIcon">
+        <div ><GiSmartphone style={{height:"20px", width:"20px"}}/></div>
       </div>
     </div>
-    <div class='assess1'>
+  <div class="showSecondHeader">
+  <div class='assess1'>
       <div class="box178">
-        <div>
-            <BiMenuAltLeft/>
+        <div class="menuIconBox">
+            <BiMenuAltLeft class="menuIcon"/>
         </div>
-        <div class="firstHead">Assessment</div>
+        <div class="firstHead1">Assessment</div>
        
       </div>
-      <div>
-        <div class="phoneIcon"><BiLaptop /></div>
+      <div class="laptopIcon">
+        <div ><BiLaptop style={{height:"20px", width:"20px"}}/></div>
       </div>
     </div>
+    <div class="secondBoxAssess">
+      <div class="myAssessment">
+My Assessment
+      </div>
+      <div class="unstopAssessment">
+       Unstop Assessment 
+        </div>
+    </div>
+  </div>
    </div>
   )
 }
