@@ -7,7 +7,8 @@ import "./SideNav.css"
 
 export default function SideNav() {
   return (
-    <div class="column">
+  <div>
+      <div class="column">
     <div class="box">
       <BiSolidDashboard style={{ height: "20px", width: "20px" }} />
       <h4 class="heading">Dashboard</h4>
@@ -32,6 +33,11 @@ export default function SideNav() {
       />
       <h4 class="heading">Round Status</h4>
     </div>
+  </div>
+
+  <div class="main-box">
+
+  </div>
   </div>
  
   )

@@ -12,6 +12,7 @@ export default function Home() {
     <div class="mainBox" >
       <div class="row">
      <div class='column'>
+    
       <SideNav/>
      </div>
 

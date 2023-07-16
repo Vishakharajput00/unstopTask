@@ -70,7 +70,7 @@ export default function AssessOverview() {
             </div>
             
            </div>
-           <div class='firstBox'>
+           <div class='firstBox' >
             <h2>Total Purpose</h2>
             <div class="flex">
                 <div class="firstBoxIcon">
