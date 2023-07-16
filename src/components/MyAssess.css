@@ -1,43 +1,38 @@
 @media (width>500px) {
-
   .hiddenComponent {
     display: none;
   }
-
 }
 
 @media (max-width: 500px) {
-  .assessemntOverview-hide-show{
+  .assessemntOverview-hide-show {
     display: none;
   }
-  
-
 }
-.myassessment{
+.myassessment {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.iconsFlex{
+.iconsFlex {
   width: 100%;
-  height:100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   float: right;
   align-items: center;
 }
-.iconFlex-icon{
+.iconFlex-icon {
   display: flex;
   justify-content: flex-end;
 }
-.hide-show{
+.hide-show {
   display: none;
 }
 
 @media (max-width: 500px) {
   .hide-show {
     display: block;
-    }
- 
+  }
 }
 
 .cardsMainBox {
@@ -47,21 +42,15 @@
   grid-gap: 10px;
 }
 @media (max-width: 768px) {
-    .cardsMainBox {
-      
-        grid-template-columns: 50% 50%;
-       
-      }
-   
+  .cardsMainBox {
+    grid-template-columns: 50% 50%;
   }
-  @media (max-width: 600px) {
-    .cardsMainBox {
-      
-        grid-template-columns: 100%;
-       
-      }
-   
+}
+@media (max-width: 600px) {
+  .cardsMainBox {
+    grid-template-columns: 100%;
   }
+}
 
 .newAssissmentBox {
   border: 1px dashed #dadce0;
@@ -96,21 +85,20 @@
 
   background-color: white;
 }
-.cards2Box{
-    /* width:388px; */
-height: Hug (209px);
-padding: 16px;
-border-radius: 12px;
-border: 1px solid #DADCE0;
-
+.cards2Box {
+  /* width:388px; */
+  height: Hug (209px);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #dadce0;
 }
-.secondCard{
-    display: flex;
-    justify-content: space-between;
+.secondCard {
+  display: flex;
+  justify-content: space-between;
 }
 .secondBoxIcon {
-    height:40px;
-    width:40px;
+  height: 40px;
+  width: 40px;
   border-radius: 8px;
   background-color: #ebe8fd;
   display: flex;
@@ -118,116 +106,110 @@ border: 1px solid #DADCE0;
   align-items: center;
 }
 
-.secondicon{
-    width: 20px;
-height: 20px;
-color:#6548EE
+.secondicon {
+  width: 20px;
+  height: 20px;
+  color: #6548ee;
 }
 
-.math{
-    font-family: Inter;
-font-size: 18px;
-font-weight: 500;
-line-height: 25px;
-letter-spacing: 0px;
-text-align: left;
-color:#1C4980
-}
-.calicon{
-    color:#1C4980;
-    width: 11.6px;
-height: 12.83px;
-top: 0.58px;
-left: 1.16px
-
-}
-.duration{
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px dotted #DADCE0;
-    display: flex;
-    justify-content: space-between;
-}
-.shareBtn{
-    width: 77px;
-    height: 30px;
-    padding-top: 2px;
-    padding-right:  8px;
-    padding-bottom:  2px;
-    padding-left: 6px;
-    border-radius: 50px;
-    border: 1px solid #1C4980;
-    gap: 4px;
-    color:#1C4980
-    
-}
-.lp{
-    position: relative;
-    height: 24px;
-    padding-top: 2px;
-    padding-right:  8px;
-    padding-bottom:  2px;
-    padding-left: 6px;
-    border-radius: 50px;
-border: 1px;
-background-color: #6548EE;
-color:white;
-margin-left: 10px;
-margin-right: 20px;
-
-}
-.lp1{
-    position: absolute;
-    height: 24px;
-    padding-top: 2px;
-    padding-right:  8px;
-    padding-bottom:  2px;
-    padding-left: 6px;
-    border-radius: 50px;
-border: 1px;
-background-color: #3079E1;
-color:white;
-margin-left: 113px;
-
-}
-.lp2{
-    position: absolute;
-    height: 24px;
-    padding-top: 2px;
-    padding-right:  8px;
-    padding-bottom:  2px;
-    padding-left: 6px;
-    border-radius: 50px;
-border: 1px;
-background-color: #E9407A;
-color:white;
-margin-left: 123px;
-
-}
-
-.question{
-    color:#1C4980;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-
-.createHeading{
+.math {
   font-family: Inter;
-font-size: 20px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: center;
-color:#1C4980;
-margin-left: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #1c4980;
+}
+.calicon {
+  color: #1c4980;
+  width: 11.6px;
+  height: 12.83px;
+  top: 0.58px;
+  left: 1.16px;
+}
+.duration {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dotted #dadce0;
+  display: flex;
+  justify-content: space-between;
+}
+.shareBtn {
+  width: 77px;
+  height: 30px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  border-radius: 50px;
+  border: 1px solid #1c4980;
+  gap: 4px;
+  color: #1c4980;
+}
+.lp {
+  position: relative;
+  height: 24px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  border-radius: 50px;
+  border: 1px;
+  background-color: #6548ee;
+  color: white;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.lp1 {
+  position: absolute;
+  height: 24px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  border-radius: 50px;
+  border: 1px;
+  background-color: #3079e1;
+  color: white;
+  margin-left: 113px;
+}
+.lp2 {
+  position: absolute;
+  height: 24px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  border-radius: 50px;
+  border: 1px;
+  background-color: #e9407a;
+  color: white;
+  margin-left: 123px;
+}
+
+.question {
+  color: #1c4980;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.createHeading {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1c4980;
+  margin-left: 30px;
 }
 form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
   background: white;
-  border-top: 1px solid #DADCE0;
+  border-top: 1px solid #dadce0;
 }
 
 h1 {
@@ -247,16 +229,15 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-  
-  border: 1px solid #DADCE0;
+  border: 1px solid #dadce0;
   border-radius: 8px;
   font-size: 16px;
   height: auto;
   margin: 0;
   outline: 0;
   width: 100%;
-  height:40px;
-  color: #DADCE0;
+  height: 40px;
+  color: #dadce0;
   margin-bottom: 25px;
   margin-top: 5px;
 }
@@ -270,21 +251,21 @@ select {
   padding: 6px;
   height: 32px;
   border-radius: 2px;
-  height:45px;
-  border: 1px solid #DADCE0;
+  height: 45px;
+  border: 1px solid #dadce0;
   border-radius: 8px;
 }
 
 .button {
   color: #fff;
-  background-color: #0073E6;
+  background-color: #0073e6;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 8px;
   width: 100%;
   margin-bottom: 10px;
-  height:40px
+  height: 40px;
 }
 
 fieldset {
@@ -325,12 +306,12 @@ label.light {
     max-width: 580px;
   }
 }
-.label{
+.label {
   font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: center;
-color:#1C4980
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1c4980;
 }

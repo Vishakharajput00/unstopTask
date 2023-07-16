@@ -9,17 +9,17 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { AiTwotoneFilter } from "react-icons/ai";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
 import AssessOverview from "./AssessOverview";
-import Dialog from '@material-ui/core/Dialog';
-import { AiOutlineClose } from 'react-icons/ai';
+import Dialog from "@material-ui/core/Dialog";
+import { AiOutlineClose } from "react-icons/ai";
 
-import Slide from '@material-ui/core/Slide';
+import Slide from "@material-ui/core/Slide";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function MyAssess() {
-  const [show,setShow]= useState(1);
-  console.log(show,'shiw--===')
+  const [show, setShow] = useState(1);
+  console.log(show, "shiw--===");
 
   const [open, setOpen] = React.useState(false);
 
@@ -31,10 +31,9 @@ export default function MyAssess() {
     setOpen(false);
   };
 
-
-const handleChange=()=>{
-setShow(show+1)
-  }
+  const handleChange = () => {
+    setShow(show + 1);
+  };
   const BoxObject = [
     {
       heading: "Math Assessment",
@@ -67,94 +66,112 @@ setShow(show+1)
       question: "00",
     },
   ];
-  
+
   return (
     <div>
-      {show % 2 === 0 ? <div class="hiddenComponent"><AssessOverview/></div> : null}
-     <div class="assessemntOverview-hide-show"> <AssessOverview/></div> 
-      <div>
-    <div class='myassessment'>
-    <div>
-        <h2>My Assessment</h2>
-      </div>
-     <div class="hide-show">
-     <div class="iconsFlex">
-        <div class="iconFlex-icon">  <AiOutlineSearch/></div>
-        <div class="iconFlex-icon"> <AiTwotoneFilter/></div>
-        <div class="iconFlex-icon"><MdOutlineSignalCellularAlt onClick={handleChange}/></div>
-     
-      </div>
-     </div>
-    </div>
-
-      <div class="cardsMainBox">
-        <div class="newAssissmentBox">
-          <div class="Plusicon">
-            <AiOutlinePlus
-            onClick={handleClickOpen}
-              style={{ color: "#0073E6", height: "23.33px", width: "23.33px" }}
-            />
-          </div>
-          <span>New Assessment</span>
-          <p>
-            From here you can add questions of multiple types like MCQs,
-            subjective (text or paragraph)!
-          </p>
+      {show % 2 === 0 ? (
+        <div class="hiddenComponent">
+          <AssessOverview />
         </div>
-        {BoxObject &&
-          BoxObject.map((obj) => {
-            return (
-              <div class="cards2Box">
-                <div class="secondCard">
-                  <div>
-                    <div class="secondBoxIcon">
-                      <PiBagFill class="secondicon" />
-                    </div>
-                    <div class="math">{obj.heading}</div>
+      ) : null}
+      <div class="assessemntOverview-hide-show">
+        {" "}
+        <AssessOverview />
+      </div>
+      <div>
+        <div class="myassessment">
+          <div>
+            <h2>My Assessment</h2>
+          </div>
+          <div class="hide-show">
+            <div class="iconsFlex">
+              <div class="iconFlex-icon">
+                {" "}
+                <AiOutlineSearch />
+              </div>
+              <div class="iconFlex-icon">
+                {" "}
+                <AiTwotoneFilter />
+              </div>
+              <div class="iconFlex-icon">
+                <MdOutlineSignalCellularAlt onClick={handleChange} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardsMainBox">
+          <div class="newAssissmentBox">
+            <div class="Plusicon">
+              <AiOutlinePlus
+                onClick={handleClickOpen}
+                style={{
+                  color: "#0073E6",
+                  height: "23.33px",
+                  width: "23.33px",
+                }}
+              />
+            </div>
+            <span>New Assessment</span>
+            <p>
+              From here you can add questions of multiple types like MCQs,
+              subjective (text or paragraph)!
+            </p>
+          </div>
+          {BoxObject &&
+            BoxObject.map((obj) => {
+              return (
+                <div class="cards2Box">
+                  <div class="secondCard">
                     <div>
-                      <span style={{ color: "#1C4980", fontWeight: "500" }}>
-                        {obj.content}
-                      </span>{" "}
-                      |{" "}
-                      <span style={{ color: "#8DA4BF" }}>
-                        <SlCalender class="calicon" /> 20 apr 2023
+                      <div class="secondBoxIcon">
+                        <PiBagFill class="secondicon" />
+                      </div>
+                      <div class="math">{obj.heading}</div>
+                      <div>
+                        <span style={{ color: "#1C4980", fontWeight: "500" }}>
+                          {obj.content}
+                        </span>{" "}
+                        |{" "}
+                        <span style={{ color: "#8DA4BF" }}>
+                          <SlCalender class="calicon" /> 20 apr 2023
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <CiMenuKebab />
+                    </div>
+                  </div>
+
+                  <div class="duration">
+                    <div style={{ display: "flex" }}>
+                      <span class="question">
+                        {obj.duration} <br />
+                        Duration{" "}
+                      </span>
+                      <span class="question" style={{ marginLeft: "10px" }}>
+                        {obj.question} <br /> Question
                       </span>
                     </div>
-                  </div>
-                  <div>
-                    <CiMenuKebab />
+
+                    <div style={{ display: "flex" }}>
+                      <span>
+                        <button class="shareBtn">
+                          <AiOutlineLink /> Share
+                        </button>
+                      </span>
+                      <span class="lp">LP</span>
+                      <span class="lp1">LP</span>
+                      <span class="lp2">LP</span>
+                    </div>
                   </div>
                 </div>
-
-                <div class="duration">
-                  <div style={{ display: "flex" }}>
-                    <span class="question">
-                      {obj.duration} <br />
-                      Duration{" "}
-                    </span>
-                    <span class="question" style={{ marginLeft: "10px" }}>
-                      {obj.question} <br /> Question
-                    </span>
-                  </div>
-
-                  <div style={{ display: "flex" }}>
-                    <span>
-                      <button class="shareBtn">
-                        <AiOutlineLink /> Share
-                      </button>
-                    </span>
-                    <span class="lp">LP</span>
-                    <span class="lp1">LP</span>
-                    <span class="lp2">LP</span>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+        </div>
       </div>
-    </div>
 
-    <Dialog
+      <Dialog
         open={open}
         TransitionComponent={Transition}
         keepMounted
@@ -162,47 +179,66 @@ setShow(show+1)
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-      
-      <div style={{display:"flex", padding:"10px",justifyContent:'space-between'}}>
-      <div><h3 class='createHeading'>Create New Assessment</h3></div>
-      <div>
-      <AiOutlineClose onClick={handleClose} style={{fontSize:"2rem"}}/>
-      </div>
-      </div>
+        <div
+          style={{
+            display: "flex",
+            padding: "10px",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <h3 class="createHeading">Create New Assessment</h3>
+          </div>
+          <div>
+            <AiOutlineClose
+              onClick={handleClose}
+              style={{ fontSize: "2rem" }}
+            />
+          </div>
+        </div>
 
-      <form action="mailto:sample@mail.com" method="post" enctype="text/plain">
-      
-         <fieldset>
-          
-            <lable for="firstname" class="label">Name of Assessment</lable>
+        <form
+          action="mailto:sample@mail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <fieldset>
+            <lable for="firstname" class="label">
+              Name of Assessment
+            </lable>
             <input type="text" />
 
-            <lable for="lastname" class="label">Purpose of the test is</lable>
+            <lable for="lastname" class="label">
+              Purpose of the test is
+            </lable>
             <select id="Purpose" name="purpose">
-               <option value="p1">Purpose 1</option>
-               <option value="p2">Purpose 2</option>
-              
-            </select>   
+              <option value="p1">Purpose 1</option>
+              <option value="p2">Purpose 2</option>
+            </select>
 
-            <lable for="mail" class="label">Description</lable>
+            <lable for="mail" class="label">
+              Description
+            </lable>
             <select id="Description" name="description">
-               <option value="d1">Description 1</option>
-               <option value="d1">Description 2</option>
-              
-            </select>     
+              <option value="d1">Description 1</option>
+              <option value="d1">Description 2</option>
+            </select>
 
-            <lable for="username" class="label">Skills</lable>
-            <input type="text"  name="user_username"/>
+            <lable for="username" class="label">
+              Skills
+            </lable>
+            <input type="text" name="user_username" />
 
-            <lable for="password" class="label">Duration of Assessment</lable>
-            <input type="text"  name="user_password" />
-         </fieldset>
+            <lable for="password" class="label">
+              Duration of Assessment
+            </lable>
+            <input type="text" name="user_password" />
+          </fieldset>
 
-       
-      
-        <button type="submit" class='button'>Save</button>        
-        
-      </form>
+          <button type="submit" class="button">
+            Save
+          </button>
+        </form>
       </Dialog>
     </div>
   );

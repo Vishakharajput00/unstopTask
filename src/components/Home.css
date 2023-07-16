@@ -1,16 +1,12 @@
-
-.row{
-  display:flex;
-  background-color: #F6F8FA;
+.row {
+  display: flex;
+  background-color: #f6f8fa;
 }
-.row2{
+.row2 {
   background: white;
 }
 @media (max-width: 500px) {
   .column {
     display: none;
-    }
-
+  }
 }
-
-
