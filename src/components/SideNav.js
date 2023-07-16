@@ -35,9 +35,7 @@ export default function SideNav() {
     </div>
   </div>
 
-  <div class="main-box">
-
-  </div>
+  
   </div>
  
   )

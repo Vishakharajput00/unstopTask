@@ -9,12 +9,9 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { AiTwotoneFilter } from "react-icons/ai";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
 import AssessOverview from "./AssessOverview";
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import { AiOutlineClose } from 'react-icons/ai';
+
 import Slide from '@material-ui/core/Slide';
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -168,7 +165,9 @@ setShow(show+1)
       
       <div style={{display:"flex", padding:"10px",justifyContent:'space-between'}}>
       <div><h3 class='createHeading'>Create New Assessment</h3></div>
-      <div></div>
+      <div>
+      <AiOutlineClose onClick={handleClose} style={{fontSize:"2rem"}}/>
+      </div>
       </div>
 
       <form action="mailto:sample@mail.com" method="post" enctype="text/plain">
